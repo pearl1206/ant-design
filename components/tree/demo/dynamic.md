@@ -85,7 +85,7 @@ class Demo extends React.Component {
         const treeData = [...this.state.treeData];
         getNewTreeData(treeData, treeNode.props.eventKey, generateTreeNodes(treeNode), 2);
         this.setState({ treeData });
-        resolve();
+        
       }, 1000);
     });
   }
